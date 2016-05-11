@@ -10,6 +10,6 @@ class Project(models.Model):
     cover = models.ImageField(upload_to='covers/')
     title = models.CharField(max_length=255)
     description = models.TextField()
-    date_uploaded = models.DateField(auto_now_add=True)
+    date_completed = models.DateField()
     url = models.URLField(max_length=255)
     github = models.URLField(max_length=255)
