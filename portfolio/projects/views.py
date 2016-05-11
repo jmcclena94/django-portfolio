@@ -1,6 +1,6 @@
 from django.views.generic import ListView
 from projects.models import Project
-from forms import ProjectForm
+from .forms import ProjectForm
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
