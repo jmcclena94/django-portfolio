@@ -1,4 +1,37 @@
 .flex {
   display: flex; }
 
+header {
+  margin: 10px 0;
+  justify-content: center; }
+  header div {
+    border-bottom: thick solid #E3E5E4;
+    width: 90%;
+    justify-content: center; }
+    header div h1 {
+      width: 75%;
+      font-family: 'Oswald', sans-serif;
+      font-size: 4em;
+      text-align: center;
+      margin: 0 0; }
+    header div h1:hover {
+      color: #6FA8F2; }
+    header div .main-nav {
+      width: 25%;
+      align-items: center; }
+      header div .main-nav ul {
+        margin: 0 0;
+        list-style: none;
+        flex-direction: column; }
+        header div .main-nav ul li {
+          margin: 2px 0; }
+          header div .main-nav ul li a {
+            text-decoration: none;
+            color: #E3E5E4; }
+          header div .main-nav ul li a:hover {
+            color: #6FA8F2; }
+
+footer {
+  margin: 10px 10px; }
+
 /*# sourceMappingURL=modules.css.map */

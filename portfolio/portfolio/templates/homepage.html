@@ -3,26 +3,31 @@
 <head>
 <meta charset="utf-8" />
 <title>Joe McClenahan</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
 {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'normalize.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'modules.css' %}" />
 </head>
 <body>
-<header>
-    <h1>JOE McCLENAHAN</h1>
-    <nav class="main-nav">
-        <ul class="flex">
-            <li><a href="/home">HOME</a></li>
-            <li><a href="/home/projects">PROJECTS</a></li>
-            <li><a href="/home/blog">BLOG</a></li>
-        </ul>
-    </nav>
+<header class="flex">
+    <div class="flex">
+        <nav class="flex main-nav">
+            <ul class="flex">
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/home/projects">PROJECTS</a></li>
+                <li><a href="/home/blog">BLOG</a></li>
+            </ul>
+        </nav>
+        <h1>JOE McCLENAHAN</h1>
+    </div>
 </header>
+<main>
 
-
-
+</main>
 <footer>
-    <h5>Joe McClenahan | 2016</h5>
+    <h5>Joe McClenahan &copy; | A Django App | 2016</h5>
 </footer>
 </body>
 </html>
