@@ -1,3 +1,12 @@
 {% extends "homepage.html" %}
 {% block content %}
+{% for project in object_list %}
+<div class="flex projects">
+    <a href="/projects/{{ project.id }}"><img class="project-image" src="{{ project.cover.url }}" />
+    <div class="caption-wrapper">
+        <h3>{{ project.title }}</h3>
+    </div></a>
+</div>
+{% endfor %}
+
 {% endblock %}
