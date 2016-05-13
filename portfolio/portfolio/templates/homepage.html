@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Joe McClenahan</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'normalize.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'modules.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'icomoon/style.css' %}" />
+</head>
+<body>
+<header class="flex">
+    <div class="flex">
+        <nav class="flex main-nav">
+            <ul class="flex">
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/home/projects">PROJECTS</a></li>
+                <li><a href="/home/blog">BLOG</a></li>
+            </ul>
+        </nav>
+        <h1>JOE McCLENAHAN</h1>
+    </div>
+</header>
+<main class="flex">
+    <div class="flex">
+        <aside class="sidebar">
+            <ul class="flex social">
+                <a href="https://www.linkedin.com/in/josephmcclenahan"><li id="ld"></li></a>
+                <a href="https://twitter.com/joe_mcclenahan"><li id="tw"></li></a>
+                <a href="https://github.com/jmcclena94"><li id="gh"></li></a>
+                <a href="mailto:jmcclena94@gmail.com"><li id="em"></li></a>
+            </ul>
+        </aside>
+    <article class="flex content">
+        <h1>Content goes here</h1>
+    </article>
+    </div>
+</main>
+<footer class="flex">
+    <h5>Joe McClenahan | A Django App | &copy; 2016</h5>
+</footer>
+</body>
+</html>
