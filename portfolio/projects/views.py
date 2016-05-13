@@ -1,7 +1,6 @@
-from django.views.generic import ListView
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 from projects.models import Project
-from .forms import ProjectForm
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
 class ProjectView(ListView):
@@ -11,29 +10,8 @@ class ProjectView(ListView):
     model = Project
 
 
-class AddProjectView(CreateView):
-    """View to add a new project."""
+class ProjectDetailView(DetailView):
+    """View for project detail."""
 
-    template_name = 'add_projects.html'
-    model = Project
-    fields = [
-        'cover',
-        'title',
-        'description',
-        'url',
-        'github',
-    ]
-
-
-class UpdateProjectView(UpdateView):
-    """View to update a new project."""
-
-    template_name = 'projects.html'
-    model = Project
-
-
-class DeleteProjectView(DeleteView):
-    """View to delete a new project."""
-
-    template_name = 'projects.html'
+    template_name = 'project_detail.html'
     model = Project

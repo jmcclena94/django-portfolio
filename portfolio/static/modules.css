@@ -6,14 +6,19 @@ header {
   justify-content: center;
   width: 100%; }
   header div {
-    border-bottom: thick solid #E3E5E4;
-    width: 90%;
-    justify-content: center; }
+    border-bottom: 3px solid #6FA8F2;
+    width: 90%; }
+    header div img {
+      width: 400px;
+      height: 90px;
+      align-self: flex-end; }
+    header div img:hover {
+      content: url("/static/seattle_skyline_scale_2_highlight.png"); }
     header div h1 {
       width: 75%;
       font-family: 'Oswald', sans-serif;
       font-size: 4em;
-      text-align: center;
+      text-align: right;
       margin: 0 0;
       align-self: center; }
     header div h1:hover {
@@ -78,10 +83,13 @@ footer {
   footer h5 {
     margin: 10px 0px;
     padding: 10px 0px;
-    border-top: thin solid #E3E5E4;
+    border-top: thin solid #6FA8F2;
     width: 30%;
     text-align: center; }
 
+@media only screen and (max-width: 890px) {
+  header div img {
+    display: none; } }
 @media only screen and (max-width: 670px) {
   header div h1 {
     align-self: center;
