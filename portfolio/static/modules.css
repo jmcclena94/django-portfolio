@@ -31,6 +31,26 @@ header {
           header div .main-nav ul li a:hover {
             color: #6FA8F2; }
 
+main {
+  width: 100%; }
+  main .sidebar {
+    margin: 10px 0px;
+    width: 15%;
+    flex-direction: column;
+    align-items: center; }
+    main .sidebar .social {
+      list-style: none;
+      flex-direction: column; }
+      main .sidebar .social a {
+        text-decoration: none;
+        color: #E3E5E4; }
+      main .sidebar .social a:hover {
+        color: #6FA8F2; }
+  main .content {
+    margin: 10px 0px;
+    width: 85%;
+    justify-content: center; }
+
 footer {
   margin: 10px 10px; }
 

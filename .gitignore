@@ -66,3 +66,5 @@ target/
 *.scss
 *.map
 .sass-cache/
+
+.DS_Store
