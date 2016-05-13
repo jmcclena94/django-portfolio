@@ -13,5 +13,5 @@ class ProjectView(ListView):
 class ProjectDetailView(DetailView):
     """View for project detail."""
 
-    template_name = 'project_detail.html'
+    template_name = 'project-detail.html'
     model = Project

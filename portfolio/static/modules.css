@@ -1,3 +1,6 @@
+.flex {
+  display: flex; }
+
 .projects {
   flex-direction: column;
   position: relative;
@@ -21,5 +24,26 @@
     .projects .caption-wrapper:hover h3 {
       display: block;
       color: #E3E5E4; }
+
+.project-detail {
+  width: 100%;
+  flex-direction: column; }
+  .project-detail .beta .text-content {
+    margin: 0 0;
+    flex-direction: column; }
+    .project-detail .beta .text-content h2 {
+      margin: 0 0;
+      width: 45%; }
+    .project-detail .beta .text-content a {
+      width: 45%;
+      text-decoration: none;
+      color: #E3E5E4;
+      font-size: 2em; }
+    .project-detail .beta .text-content #gh-detail:after {
+      content: "\f09b";
+      font-family: 'icomoon'; }
+  .project-detail img {
+    width: 100%;
+    margin-right: 15px; }
 
 /*# sourceMappingURL=modules.css.map */

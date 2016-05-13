@@ -1,0 +1,13 @@
+{% extends "homepage.html" %}
+{% block content %}
+<div class="flex project-detail">
+    <div class="beta">
+        <div class="flex text-content">
+            <a id="gh-detail" href="{{ project.github }}"></a>
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+        </div>
+    </div>
+    <img class="project-image" src="{{ project.cover.url }}" />
+</div>
+{% endblock %}
