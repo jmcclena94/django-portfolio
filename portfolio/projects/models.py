@@ -1,4 +1,5 @@
 from django.db import models
+from portfolio import settings
 
 
 class Project(models.Model):
@@ -10,6 +11,6 @@ class Project(models.Model):
     cover = models.ImageField(upload_to='covers/')
     title = models.CharField(max_length=255)
     description = models.TextField()
-    date_completed = models.DateField()
+    date_uploaded = models.DateField(auto_now_add=True)
     url = models.URLField(max_length=255)
     github = models.URLField(max_length=255)

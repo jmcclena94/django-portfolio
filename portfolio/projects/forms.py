@@ -13,5 +13,4 @@ class ProjectForm(ModelForm):
             'description',
             'url',
             'github',
-            'date_completed'
         ]
