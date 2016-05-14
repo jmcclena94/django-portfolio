@@ -30,18 +30,48 @@
   flex-direction: column; }
   .project-detail .beta .text-content {
     margin: 0 0;
-    flex-direction: column; }
-    .project-detail .beta .text-content h2 {
-      margin: 0 0;
-      width: 45%; }
-    .project-detail .beta .text-content a {
-      width: 45%;
-      text-decoration: none;
-      color: #E3E5E4;
-      font-size: 2em; }
-    .project-detail .beta .text-content #gh-detail:after {
-      content: "\f09b";
-      font-family: 'icomoon'; }
+    flex-direction: row;
+    width: 100%; }
+    .project-detail .beta .text-content .project-description {
+      flex-direction: column;
+      width: 80%;
+      padding-right: 5%;
+      border-right: 2px solid #6FA8F2; }
+      .project-detail .beta .text-content .project-description h2 {
+        margin: 0 0;
+        width: 100%;
+        font-size: 2em; }
+    .project-detail .beta .text-content .find-project {
+      width: 20%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 5%; }
+      .project-detail .beta .text-content .find-project h4 {
+        margin: 0;
+        text-align: center; }
+      .project-detail .beta .text-content .find-project ul {
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        align-items: center; }
+        .project-detail .beta .text-content .find-project ul a {
+          width: 45%;
+          text-decoration: none;
+          color: #E3E5E4;
+          font-size: 2em; }
+        .project-detail .beta .text-content .find-project ul a:hover {
+          color: #6FA8F2; }
+        .project-detail .beta .text-content .find-project ul #gh-detail:before {
+          content: "\f09b";
+          font-family: 'icomoon';
+          font-size: .85em; }
+        .project-detail .beta .text-content .find-project ul #ww-detail:before {
+          content: "\f0ac";
+          font-family: 'icomoon';
+          font-size: .85em; }
   .project-detail img {
     width: 100%;
     margin-right: 15px; }

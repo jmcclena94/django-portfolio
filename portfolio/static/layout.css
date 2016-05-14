@@ -2,9 +2,12 @@
   display: flex; }
 
 header {
-  margin: 10px 0;
+  margin: 0 0 10px 0;
+  padding-top: 15px;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  background-color: #505D66; }
   header div {
     border-bottom: 3px solid #6FA8F2;
     width: 90%; }
@@ -41,12 +44,15 @@ header {
 
 main {
   width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 115px;
+  padding-bottom: 85px; }
   main div {
     width: 90%;
     margin: 10px 0px; }
     main div .sidebar {
-      width: 10%; }
+      width: 10%;
+      position: fixed; }
       main div .sidebar .social {
         list-style: none;
         flex-direction: column;
@@ -73,14 +79,18 @@ main {
         main div .sidebar .social a:hover {
           color: #6FA8F2; }
     main div .content {
+      padding-left: 70px;
       width: 90%;
       justify-content: space-around;
       flex-wrap: wrap; }
 
 footer {
   justify-content: center;
-  margin: 10px 10px;
-  width: 100%; }
+  margin: 0px 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: #505D66; }
   footer h5 {
     margin: 10px 0px;
     padding: 10px 0px;
@@ -88,7 +98,7 @@ footer {
     width: 30%;
     text-align: center; }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1110px) {
   header div img {
     display: none; } }
 @media only screen and (max-width: 670px) {

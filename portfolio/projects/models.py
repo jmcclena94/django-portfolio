@@ -5,6 +5,9 @@ from portfolio import settings
 class Project(models.Model):
     """Project model."""
 
+    class Meta:
+        ordering = ['date_uploaded']
+
     def __str__(self):
         return self.title
 
