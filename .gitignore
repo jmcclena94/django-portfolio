@@ -68,3 +68,6 @@ target/
 .sass-cache/
 
 .DS_Store
+
+# media folder
+media/

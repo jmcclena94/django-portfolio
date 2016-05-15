@@ -7,8 +7,10 @@
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static 'normalize.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'layout.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'modules.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'icomoon/style.css' %}" />
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
 </head>
 <body>
 <header class="flex">
@@ -17,10 +19,11 @@
             <ul class="flex">
                 <li><a href="/home">HOME</a></li>
                 <li><a href="/about">ABOUT</a></li>
-                <li><a href="/home/projects">PROJECTS</a></li>
-                <li><a href="/home/blog">BLOG</a></li>
+                <li><a href="/projects">PROJECTS</a></li>
+                <li><a href="/blog">BLOG</a></li>
             </ul>
         </nav>
+        <img src="/static/seattle_skyline_scale_2.png" />
         <h1>JOE McCLENAHAN</h1>
     </div>
 </header>
@@ -35,7 +38,8 @@
             </ul>
         </aside>
     <article class="flex content">
-        <h1>Content goes here</h1>
+        {% block content %}
+        {% endblock %}
     </article>
     </div>
 </main>

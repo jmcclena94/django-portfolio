@@ -1,0 +1,113 @@
+.flex {
+  display: flex; }
+
+header {
+  margin: 0 0 10px 0;
+  padding-top: 15px;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  background-color: #505D66; }
+  header div {
+    border-bottom: 3px solid #6FA8F2;
+    width: 90%; }
+    header div img {
+      width: 400px;
+      height: 90px;
+      align-self: flex-end; }
+    header div img:hover {
+      content: url("/static/seattle_skyline_scale_2_highlight.png"); }
+    header div h1 {
+      width: 75%;
+      font-family: 'Oswald', sans-serif;
+      font-size: 4em;
+      text-align: right;
+      margin: 0 0;
+      align-self: center; }
+    header div h1:hover {
+      color: #6FA8F2; }
+    header div .main-nav {
+      width: 25%;
+      align-items: center; }
+      header div .main-nav ul {
+        margin: 0 0;
+        list-style: none;
+        flex-direction: column;
+        padding: 0; }
+        header div .main-nav ul li {
+          margin: 2px 0; }
+          header div .main-nav ul li a {
+            text-decoration: none;
+            color: #E3E5E4; }
+          header div .main-nav ul li a:hover {
+            color: #6FA8F2; }
+
+main {
+  width: 100%;
+  justify-content: center;
+  padding-top: 115px;
+  padding-bottom: 85px; }
+  main div {
+    width: 90%;
+    margin: 10px 0px; }
+    main div .sidebar {
+      width: 10%;
+      position: fixed; }
+      main div .sidebar .social {
+        list-style: none;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        width: 100%;
+        align-items: baseline; }
+        main div .sidebar .social #ld:before {
+          content: "\f0e1";
+          font-family: 'icomoon'; }
+        main div .sidebar .social #tw:before {
+          content: "\f099";
+          font-family: 'icomoon'; }
+        main div .sidebar .social #gh:before {
+          content: "\f09b";
+          font-family: 'icomoon'; }
+        main div .sidebar .social #em:before {
+          content: "\f003";
+          font-family: 'icomoon'; }
+        main div .sidebar .social a {
+          font-size: 2em;
+          text-decoration: none;
+          color: #E3E5E4; }
+        main div .sidebar .social a:hover {
+          color: #6FA8F2; }
+    main div .content {
+      padding-left: 70px;
+      width: 90%;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+
+footer {
+  justify-content: center;
+  margin: 0px 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: #505D66; }
+  footer h5 {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-top: thin solid #6FA8F2;
+    width: 30%;
+    text-align: center; }
+
+@media only screen and (max-width: 1110px) {
+  header div img {
+    display: none; } }
+@media only screen and (max-width: 670px) {
+  header div h1 {
+    align-self: center;
+    font-size: 3em; } }
+@media only screen and (max-width: 500px) {
+  header div h1 {
+    align-self: center;
+    font-size: 2em; } }
+
+/*# sourceMappingURL=layout.css.map */

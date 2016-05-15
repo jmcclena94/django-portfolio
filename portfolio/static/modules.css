@@ -1,94 +1,98 @@
 .flex {
   display: flex; }
 
-header {
-  margin: 10px 0;
-  justify-content: center;
-  width: 100%; }
-  header div {
-    border-bottom: thick solid #E3E5E4;
-    width: 90%;
-    justify-content: center; }
-    header div h1 {
-      width: 75%;
-      font-family: 'Oswald', sans-serif;
-      font-size: 4em;
-      text-align: center;
-      margin: 0 0;
-      align-self: center; }
-    header div h1:hover {
-      color: #6FA8F2; }
-    header div .main-nav {
-      width: 25%;
-      align-items: center; }
-      header div .main-nav ul {
-        margin: 0 0;
-        list-style: none;
-        flex-direction: column;
-        padding: 0; }
-        header div .main-nav ul li {
-          margin: 2px 0; }
-          header div .main-nav ul li a {
-            text-decoration: none;
-            color: #E3E5E4; }
-          header div .main-nav ul li a:hover {
-            color: #6FA8F2; }
+.about {
+  justify-content: space-around; }
+  .about img {
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid #6FA8F2;
+    padding-right: 3%; }
+  .about p {
+    padding-left: 3%; }
 
-main {
+.projects {
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 200px; }
+  .projects img {
+    width: 200px;
+    height: 200px; }
+  .projects .caption-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    margin: 0 0; }
+    .projects .caption-wrapper h3 {
+      margin: 44% 0;
+      text-align: center;
+      display: none; }
+  .projects .caption-wrapper:hover {
+    background-color: rgba(111, 168, 242, 0.9); }
+    .projects .caption-wrapper:hover h3 {
+      display: block;
+      color: #E3E5E4; }
+
+.project-detail {
   width: 100%;
-  justify-content: center; }
-  main div {
-    width: 90%;
-    margin: 10px 0px; }
-    main div .sidebar {
-      width: 10%; }
-      main div .sidebar .social {
-        list-style: none;
+  flex-direction: column; }
+  .project-detail .beta .text-content {
+    margin: 0 0;
+    flex-direction: row;
+    width: 100%; }
+    .project-detail .beta .text-content .project-description {
+      flex-direction: column;
+      width: 80%;
+      padding-right: 5%;
+      border-right: 2px solid #6FA8F2; }
+      .project-detail .beta .text-content .project-description h2 {
+        margin: 0 0;
+        width: 100%;
+        font-size: 2em; }
+    .project-detail .beta .text-content .find-project {
+      width: 20%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 5%; }
+      .project-detail .beta .text-content .find-project h4 {
+        margin: 0;
+        text-align: center; }
+      .project-detail .beta .text-content .find-project ul {
         flex-direction: column;
         justify-content: space-around;
+        list-style: none;
         padding: 0;
+        margin: 0;
         width: 100%;
-        align-items: baseline; }
-        main div .sidebar .social #ld:before {
-          content: "\f0e1";
-          font-family: 'icomoon'; }
-        main div .sidebar .social #tw:before {
-          content: "\f099";
-          font-family: 'icomoon'; }
-        main div .sidebar .social #gh:before {
-          content: "\f09b";
-          font-family: 'icomoon'; }
-        main div .sidebar .social #em:before {
-          content: "\f003";
-          font-family: 'icomoon'; }
-        main div .sidebar .social a {
-          font-size: 2em;
+        align-items: center; }
+        .project-detail .beta .text-content .find-project ul a {
+          width: 45%;
           text-decoration: none;
-          color: #E3E5E4; }
-        main div .sidebar .social a:hover {
+          color: #E3E5E4;
+          font-size: 2em; }
+        .project-detail .beta .text-content .find-project ul a:hover {
           color: #6FA8F2; }
-    main div .content {
-      width: 90%;
-      justify-content: center; }
-
-footer {
-  justify-content: center;
-  margin: 10px 10px;
-  width: 100%; }
-  footer h5 {
-    margin: 10px 0px;
-    padding: 10px 0px;
-    border-top: thin solid #E3E5E4;
-    width: 30%;
-    text-align: center; }
+        .project-detail .beta .text-content .find-project ul #gh-detail:before {
+          content: "\f09b";
+          font-family: 'icomoon';
+          font-size: .85em; }
+        .project-detail .beta .text-content .find-project ul #ww-detail:before {
+          content: "\f0ac";
+          font-family: 'icomoon';
+          font-size: .85em; }
+  .project-detail img {
+    width: 100%;
+    margin-right: 15px; }
 
 @media only screen and (max-width: 670px) {
-  header div h1 {
-    align-self: center;
-    font-size: 3em; } }
-@media only screen and (max-width: 500px) {
-  header div h1 {
-    align-self: center;
-    font-size: 2em; } }
+  .about {
+    flex-direction: column;
+    align-items: center; }
+    .about img {
+      border-bottom: 2px solid #6FA8F2;
+      border-right: none;
+      padding-bottom: 3%; } }
 
 /*# sourceMappingURL=modules.css.map */
