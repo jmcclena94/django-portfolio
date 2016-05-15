@@ -1,0 +1,11 @@
+keypair: pk-aws
+security_group: portfolio
+instance_type: t2.micro
+ami: ami-29ebb519
+vpc_subnet_id: subnet-629e973b
+region: us-west-2
+instance_tags: {"Name": "portfolio"}
+root_ebs_size: 8
+zone: us-west-2c
+instance_profile_name: joemcclenahan
+num_instances: 1
