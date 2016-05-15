@@ -1,0 +1,49 @@
+---
+
+- name: Install System Packages
+  apt: name={{ item }} state=present update_cache=yes cache_valid_time=3600
+  sudo: yes
+  with_items:
+    - build-essential
+    - python-dev
+    - python-pip
+    - postgresql-client
+    - libpq-dev
+    - libjpeg8-dev
+    - python-pip
+    - python-psycopg2
+    - git
+
+- name: Clone Django Repository
+  git: repo=https://github.com/jmcclena94/django-portfolio.git dest={{ django_home }} force=yes
+
+- name: Install Python Dependencies
+  sudo: yes
+  pip:
+    state: present
+    requirements: "{{ django_home }}/requirements.txt"
+
+- name: Get DB Hostvars
+  set_fact:
+    db_host: "{{ hostvars[groups[rds_db_instance][0]] }}"
+
+- name: Get DB Password
+  include_vars: secrets.yml
+
+- include_vars: secrets.yml
+
+- name: Run Migrations
+  environment:
+      DB_NAME: "{{ db_name }}"
+      DB_PW: "{{ db_password }}"
+      DB_USER: "{{ db_user }}"
+      DB_HOST: "{{ db_host_loc }}"
+      DJANGO_SECRET_KEY: "{{ django_secret_key }}"
+  django_manage:
+    app_path: "{{ django_home }}/imager"
+    settings: portfolio.settings
+    command: migrate
+
+- name: Make Media Directory
+  sudo: yes
+  file: path={{ django_home }}/portfolio/media state=directory mode=0775 group=www-data

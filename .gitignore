@@ -71,3 +71,5 @@ target/
 
 # media folder
 media/
+
+secrets.yml
