@@ -1,2 +1,2 @@
-django_home: /home/ubuntu/django-imager
-rds_db_instance: imagerdb
+django_home: /home/ubuntu/django-portfolio
+rds_db_instance: portfolio

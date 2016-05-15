@@ -15,7 +15,7 @@
     - git
 
 - name: Clone Django Repository
-  git: repo=https://github.com/jmcclena94/django-imager.git dest={{ django_home }} force=yes
+  git: repo=https://github.com/jmcclena94/django-portfolio.git dest={{ django_home }} force=yes
 
 - name: Install Python Dependencies
   sudo: yes
@@ -37,15 +37,13 @@
       DB_NAME: "{{ db_name }}"
       DB_PW: "{{ db_password }}"
       DB_USER: "{{ db_user }}"
-      DB_HOST: imagerdb.cousackhc6yj.us-west-2.rds.amazonaws.com
-      GMAIL_USERNAME: gmail_username
-      GMAIL_PW: gmail_pw
-      DJANGO_SECRET_KEY: django_secret_key
+      DB_HOST: "{{ db_host_loc }}"
+      DJANGO_SECRET_KEY: "{{ django_secret_key }}"
   django_manage:
     app_path: "{{ django_home }}/imager"
-    settings: imager.settings
+    settings: portfolio.settings
     command: migrate
 
 - name: Make Media Directory
   sudo: yes
-  file: path={{ django_home }}/imager/media state=directory mode=0775 group=www-data
+  file: path={{ django_home }}/portfolio/media state=directory mode=0775 group=www-data

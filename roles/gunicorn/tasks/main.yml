@@ -6,8 +6,8 @@
 
 - name: Create gunicorn Upstart Job
   sudo: yes
-  template: src=imager.conf.j2 dest=/etc/init/imager.conf
+  template: src=imager.conf.j2 dest=/etc/init/portfolio.conf
 
 - name: Start gunicorn Upstart Job
   sudo: yes
-  service: name=imager state=restarted
+  service: name=portfolio state=restarted
