@@ -40,9 +40,21 @@
       DB_HOST: "{{ db_host_loc }}"
       DJANGO_SECRET_KEY: "{{ django_secret_key }}"
   django_manage:
-    app_path: "{{ django_home }}/imager"
+    app_path: "{{ django_home }}/portfolio"
     settings: portfolio.settings
     command: migrate
+
+- name: Create Superuser
+  environment:
+      DB_NAME: "{{ db_name }}"
+      DB_PW: "{{ db_password }}"
+      DB_USER: "{{ db_user }}"
+      DB_HOST: "{{ db_host_loc }}"
+      DJANGO_SECRET_KEY: "{{ django_secret_key }}"
+  django_manage:
+      app_path: "{{ django_home }}/portfolio"
+      settings: portfolio.settings
+      command: "createsuperuser --noinput --username=jmcclena94 --email=jmcclena94@gmail.com --password={{ superuser_password }}"
 
 - name: Make Media Directory
   sudo: yes
