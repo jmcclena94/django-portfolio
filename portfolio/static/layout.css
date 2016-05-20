@@ -7,7 +7,8 @@ header {
   justify-content: center;
   width: 100%;
   position: fixed;
-  background-color: #505D66; }
+  background-color: #505D66;
+  z-index: 10; }
   header div {
     border-bottom: 3px solid #6FA8F2;
     width: 90%; }

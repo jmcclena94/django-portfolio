@@ -18,19 +18,22 @@
   height: 200px; }
   .projects img {
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    border-radius: 2px; }
   .projects .caption-wrapper {
     position: absolute;
     width: 200px;
     height: 200px;
     top: 0;
-    margin: 0 0; }
+    margin: 0 0;
+    border-radius: 2px; }
     .projects .caption-wrapper h3 {
       margin: 44% 0;
       text-align: center;
       display: none; }
   .projects .caption-wrapper:hover {
-    background-color: rgba(111, 168, 242, 0.9); }
+    background-color: rgba(111, 168, 242, 0.9);
+    border-radius: 2px; }
     .projects .caption-wrapper:hover h3 {
       display: block;
       color: #E3E5E4; }
