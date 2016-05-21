@@ -29,11 +29,14 @@
 
 .about {
   justify-content: space-around; }
-  .about img {
+  .about .aboutpic {
     width: 200px;
-    height: 200px;
-    border-right: 2px solid #6FA8F2;
-    padding-right: 3%; }
+    height: 200px; }
+    .about .aboutpic img {
+      width: 200px;
+      height: 200px;
+      border-right: 2px solid #6FA8F2;
+      padding-right: 3%; }
   .about p {
     padding-left: 3%; }
 

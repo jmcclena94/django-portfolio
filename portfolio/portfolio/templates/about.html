@@ -2,7 +2,9 @@
 {% block content %}
 <div class="flex about">
     {% for about in object_list %}
-    <img src="{{ about.profilepic.url }}" />
+    <div class="aboutpic">
+        <img src="{{ about.profilepic.url }}" />
+    </div>
     <p>{{ about.aboutme }}</p>
     {% endfor %}
 </div>
