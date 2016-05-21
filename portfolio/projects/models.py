@@ -18,3 +18,10 @@ class Project(models.Model):
     date_uploaded = models.DateField(auto_now_add=True)
     url = models.URLField(max_length=255, blank=True)
     github = models.URLField(max_length=255)
+
+
+class About(models.Model):
+    """About me model."""
+
+    aboutme = models.TextField()
+    profilepic = models.ImageField(upload_to='profilepic/')

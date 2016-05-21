@@ -1,6 +1,6 @@
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from projects.models import Project
+from projects.models import Project, About
 
 
 class ProjectView(ListView):
@@ -15,3 +15,10 @@ class ProjectDetailView(DetailView):
 
     template_name = 'project-detail.html'
     model = Project
+
+
+class AboutView(ListView):
+    """About me view."""
+
+    template_name = 'about.html'
+    model = About
