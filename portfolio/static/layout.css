@@ -2,6 +2,12 @@
   display: flex; }
 
 header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   margin: 0 0 10px 0;
   padding-top: 15px;
   justify-content: center;
@@ -12,12 +18,18 @@ header {
   header div {
     border-bottom: 3px solid #6FA8F2;
     width: 90%; }
-    header div img {
-      width: 400px;
+    header div .seattle {
+      display: inline-flex;
+      border-bottom: none;
+      width: 600px;
       height: 90px;
       align-self: flex-end; }
-    header div img:hover {
-      content: url("/static/seattle_skyline_scale_2_highlight.png"); }
+      header div .seattle img {
+        width: 100%;
+        height: 100%;
+        align-self: flex-end; }
+      header div .seattle img:hover {
+        content: url("/static/seattle_skyline_scale_2_highlight.png"); }
     header div h1 {
       width: 75%;
       font-family: 'Oswald', sans-serif;
@@ -100,7 +112,7 @@ footer {
     text-align: center; }
 
 @media only screen and (max-width: 1110px) {
-  header div img {
+  header div .seattle {
     display: none; } }
 @media only screen and (max-width: 670px) {
   header div h1 {
