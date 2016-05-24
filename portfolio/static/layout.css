@@ -39,21 +39,25 @@ header {
       align-self: center; }
     header div h1:hover {
       color: #6FA8F2; }
-    header div .main-nav {
+    header div .nav-container {
       width: 25%;
-      align-items: center; }
-      header div .main-nav ul {
-        margin: 0 0;
-        list-style: none;
-        flex-direction: column;
-        padding: 0; }
-        header div .main-nav ul li {
-          margin: 2px 0; }
-          header div .main-nav ul li a {
-            text-decoration: none;
-            color: #E3E5E4; }
-          header div .main-nav ul li a:hover {
-            color: #6FA8F2; }
+      align-items: center;
+      border-bottom: none; }
+      header div .nav-container .main-nav {
+        margin-top: 5%;
+        align-items: center; }
+        header div .nav-container .main-nav ul {
+          margin: 0 0;
+          list-style: none;
+          flex-direction: column;
+          padding: 0; }
+          header div .nav-container .main-nav ul li {
+            margin: 2px 0; }
+            header div .nav-container .main-nav ul li a {
+              text-decoration: none;
+              color: #E3E5E4; }
+            header div .nav-container .main-nav ul li a:hover {
+              color: #6FA8F2; }
 
 main {
   width: 100%;
@@ -115,9 +119,19 @@ footer {
   header div .seattle {
     display: none; } }
 @media only screen and (max-width: 670px) {
+  header div .main-nav {
+    display: none; }
+  header div .nav-container:before {
+    content: "\e900";
+    font-family: 'icomoon';
+    font-size: 3em; }
+  header div .nav-container:hover .main-nav {
+    display: flex;
+    position: absolute;
+    margin-top: 2%; }
   header div h1 {
     align-self: center;
-    font-size: 3em; } }
+    font-size: 2em; } }
 @media only screen and (max-width: 500px) {
   header div h1 {
     align-self: center;
