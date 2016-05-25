@@ -13,6 +13,7 @@
   .landing h1 {
     text-align: center;
     margin-bottom: 0;
+    margin-top: 0;
     font-size: 2.5em; }
   .landing h4 {
     margin-top: 0;
@@ -127,12 +128,25 @@
     margin-right: 15px; }
 
 @media only screen and (max-width: 670px) {
+  .landing img {
+    width: 310px;
+    height: 70px; }
+  .landing h1 {
+    font-size: 2em; }
+  .landing h4 {
+    font-size: 1em; }
+
   .about {
     flex-direction: column;
     align-items: center; }
-    .about img {
-      border-bottom: 2px solid #6FA8F2;
-      border-right: none;
-      padding-bottom: 3%; } }
+    .about .aboutpic {
+      width: 180px;
+      height: 180px; }
+      .about .aboutpic img {
+        width: 180px;
+        height: 180px;
+        border-bottom: 2px solid #6FA8F2;
+        border-right: 2px solid #6FA8F2;
+        padding-bottom: 3%; } }
 
 /*# sourceMappingURL=modules.css.map */
