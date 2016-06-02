@@ -4,7 +4,7 @@
 
 <br />
 
-#### <center>This is my person portfolio site.  It can be found at [joemcclenahan.com](https://www.joemcclenahan.com "Hire Me!")</center>
+#### <center>This is my person portfolio site.  It can be found at [joemcclenahan.com](http://www.joemcclenahan.com "Hire Me!")</center>
 
 <br />
 
