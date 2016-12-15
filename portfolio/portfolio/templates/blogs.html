@@ -1,0 +1,11 @@
+{% extends "homepage.html" %}
+{% block content %}
+<div class="flex blog">
+    {% for blog in object_list %}
+    <div class="aboutpic">
+        <img src="{{ blog.cover.url }}" />
+    </div>
+    <p>{{ blog.text }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

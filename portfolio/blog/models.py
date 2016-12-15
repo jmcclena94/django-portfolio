@@ -4,7 +4,7 @@ from django.db import models
 class BlogImage(models.Model):
     """Blog image."""
 
-    image = models.ImageField(upload_to='/blog/images/%Y-%m-%d')
+    image = models.ImageField(upload_to='blog/images/%Y-%m-%d')
     title = models.CharField(max_length=255)
     description = models.TextField()
 
