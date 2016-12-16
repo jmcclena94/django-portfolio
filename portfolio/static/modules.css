@@ -28,6 +28,25 @@
   .landing a:hover {
     color: #6FA8F2; }
 
+.blog {
+  justify-content: space-between;
+  width: 100%; }
+  .blog .blogs {
+    flex-direction: column;
+    width: 85%; }
+    .blog .blogs .blogcover {
+      width: 100%; }
+      .blog .blogs .blogcover img {
+        width: 100%; }
+  .blog .bloglist {
+    width: 15%;
+    text-align: left;
+    padding: 2%;
+    overflow: auto; }
+    .blog .bloglist a {
+      text-decoration: none;
+      color: #E3E5E4; }
+
 .about {
   display: -webkit-flex;
   display: flex;

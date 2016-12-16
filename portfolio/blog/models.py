@@ -27,3 +27,4 @@ class Blog(models.Model):
     text = models.TextField()
     date_uploaded = models.DateField(auto_now_add=True)
     images = models.ManyToManyField(BlogImage)
+    vidsos = models.ManyToManyField(BlogVideo)
