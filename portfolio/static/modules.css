@@ -38,6 +38,13 @@
       width: 100%; }
       .blog .blogs .blogcover img {
         width: 100%; }
+    .blog .blogs .blogcontent {
+      width: 100%; }
+      .blog .blogs .blogcontent img {
+        width: 100%; }
+      .blog .blogs .blogcontent h5 {
+        margin-top: 1%;
+        margin-bottom: 2%; }
   .blog .bloglist {
     width: 15%;
     text-align: left;
