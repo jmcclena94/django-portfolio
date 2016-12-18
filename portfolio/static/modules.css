@@ -33,7 +33,7 @@
   width: 100%; }
   .blog .blogs {
     flex-direction: column;
-    width: 85%; }
+    width: 80%; }
     .blog .blogs .blogcover {
       width: 100%; }
       .blog .blogs .blogcover img {
@@ -45,8 +45,21 @@
       .blog .blogs .blogcontent h5 {
         margin-top: 1%;
         margin-bottom: 2%; }
+      .blog .blogs .blogcontent .videowrapper {
+        position: relative;
+        padding-bottom: 56.45%;
+        padding-top: 25px;
+        height: 0;
+        margin-left: auto;
+        margin-right: auto; }
+        .blog .blogs .blogcontent .videowrapper iframe {
+          position: absolute;
+          top: 10%;
+          left: 10%;
+          width: 80%;
+          height: 80%; }
   .blog .bloglist {
-    width: 15%;
+    width: 20%;
     text-align: left;
     padding: 2%;
     overflow: auto; }

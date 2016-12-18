@@ -14,6 +14,12 @@
             <h5>{{ image.title }}</h5>
             <figcaption>{{ image.description }}</figcaption>
             {% endfor %}
+            {% for video in blog.videos.all %}
+            <div class="videowrapper">
+                <iframe src="{{ video.url }}"></iframe>
+            </div>
+            <figcaption>{{ video.description }}</figcaption>
+            {% endfor %}
         </div>
         {% endfor %}
     </div>
