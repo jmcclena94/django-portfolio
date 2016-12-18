@@ -8,23 +8,12 @@
         </div>
         <div class="blogcontent">
             <h1>{{ blog.title }}</h1>
-            <p>{{ blog.text|linebreaks }}</p>
-            {% for image in blog.images.all %}
-            <img src="{{ image.image.url }}" />
-            <h5>{{ image.title }}</h5>
-            <figcaption>{{ image.description }}</figcaption>
-            {% endfor %}
-            {% for video in blog.videos.all %}
-            <div class="videowrapper">
-                <iframe src="{{ video.url }}"></iframe>
-            </div>
-            <figcaption>{{ video.description }}</figcaption>
-            {% endfor %}
+            {{ blog.text|safe }}
         </div>
         {% endfor %}
     </div>
     <div class="bloglist">
-        <h4>Recent Blogs</h4>
+        <h4>Recent Posts</h4>
         {% for blog in object_list %}
         <a href = "/blog/{{ blog.id }}">{{ blog.title}}</a>
         {% endfor %}
