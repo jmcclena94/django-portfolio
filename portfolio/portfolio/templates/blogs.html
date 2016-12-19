@@ -1,22 +1,27 @@
 {% extends "homepage.html" %}
 {% block content %}
 <div class="flex blog">
-    {% for blog in object_list %}
-    <div class="flex blogs">
-        <div class="blogcover">
-            <img src="{{ blog.cover.url }}" />
-        </div>
-        <div class="blogcontent">
-            <h1>{{ blog.title }}</h1>
-            {{ blog.text|safe }}
+    <div class="fullblogs">
+        {% for blog in object_list %}
+        <div class="flex newblog">
+            <div class="blogcover">
+                <img src="{{ blog.cover.url }}" />
+            </div>
+            <div class="blogcontent">
+                <h1>{{ blog.title }}</h1>
+                {{ blog.text|safe }}
+            </div>
         </div>
         {% endfor %}
     </div>
     <div class="bloglist">
         <h4>Recent Posts</h4>
-        {% for blog in object_list %}
-        <a href = "/blog/{{ blog.id }}">{{ blog.title}}</a>
-        {% endfor %}
+        <ul class="flex">
+            {% for blog in object_list %}
+            <li><a href = "/blog/{{ blog.id }}">{{ blog.title}}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
+
 {% endblock %}

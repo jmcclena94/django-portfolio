@@ -10,4 +10,4 @@ class Blog(models.Model):
     cover = models.ImageField(upload_to='blog/covers/')
     title = models.CharField(max_length=255)
     text = models.TextField()
-    date_uploaded = models.DateField(auto_now_add=True)
+    date_uploaded = models.DateTimeField(auto_now_add=True)
