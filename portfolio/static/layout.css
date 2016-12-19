@@ -1,5 +1,6 @@
 .flex {
-  display: flex; }
+  display: flex;
+  display: -webkit-flex; }
 
 header {
   display: -webkit-flex;
@@ -10,7 +11,6 @@ header {
   justify-content: space-around;
   margin: 0 0 10px 0;
   padding-top: 15px;
-  justify-content: center;
   width: 100%;
   position: fixed;
   background-color: #505D66;
@@ -112,13 +112,30 @@ footer {
     text-align: center; }
 
 @media only screen and (max-width: 1110px) {
+  header div .main-nav {
+    position: absolute;
+    width: 90%; }
+    header div .main-nav ul {
+      font-weight: bold;
+      background-color: #505D66;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative;
+      top: 98px; }
   header div .seattle {
-    display: none; } }
+    display: none; }
+  header div h1 {
+    text-align: left; } }
 @media only screen and (max-width: 670px) {
+  header div .main-nav ul {
+    top: 74px; }
   header div h1 {
     align-self: center;
     font-size: 3em; } }
 @media only screen and (max-width: 500px) {
+  header div .main-nav ul {
+    top: 50px; }
   header div h1 {
     align-self: center;
     font-size: 2em; } }

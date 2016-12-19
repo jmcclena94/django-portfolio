@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^$', HomepageView.as_view()),
     # url(r'^about/$', AboutView.as_view()),
     url(r'^', include('projects.urls')),
+    url(r'^', include('blog.urls')),
 ]
 
 if settings.DEBUG:
