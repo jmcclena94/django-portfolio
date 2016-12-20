@@ -92,7 +92,8 @@ main {
         main div .sidebar .social a:hover {
           color: #6FA8F2; }
     main div .content {
-      padding-left: 70px;
+      padding-left: 20px;
+      padding-top: 10px;
       width: 90%;
       justify-content: space-around;
       flex-wrap: wrap; }
