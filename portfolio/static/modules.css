@@ -31,7 +31,8 @@
 .blog {
   justify-content: space-between;
   width: 100%;
-  font-size: .75em; }
+  font-size: .75em;
+  margin-left: 40px; }
   .blog .fullblogs {
     flex-direction: column;
     width: 80%; }
@@ -48,6 +49,8 @@
         .blog .fullblogs .newblog .blogcontent h5 {
           margin-top: 1%;
           margin-bottom: 2%; }
+        .blog .fullblogs .newblog .blogcontent ul {
+          list-style: none; }
         .blog .fullblogs .newblog .blogcontent .videowrapper {
           position: relative;
           padding-bottom: 56.45%;
@@ -84,8 +87,8 @@
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: space-around;
-  justify-content: space-around; }
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
   .about .aboutpic {
     width: 200px;
     height: 200px;
@@ -97,6 +100,7 @@
       border-right: 2px solid #6FA8F2;
       padding-right: 3%; }
   .about p {
+    font-size: .75em;
     padding-left: 3%;
     width: 70%; }
 
@@ -129,7 +133,8 @@
 
 .project-detail {
   width: 100%;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-left: 60px; }
   .project-detail .beta .text-content {
     margin: 0 0;
     flex-direction: row;
