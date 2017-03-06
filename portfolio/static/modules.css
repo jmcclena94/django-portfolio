@@ -74,6 +74,9 @@
             left: 10%;
             width: 80%;
             height: 80%; }
+        .blog .fullblogs .newblog .blogcontent .blogimg {
+          width: 50%;
+          margin: auto; }
   .blog .bloglist {
     width: 20%;
     text-align: left; }
