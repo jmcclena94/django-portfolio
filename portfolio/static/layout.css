@@ -122,7 +122,6 @@ footer {
       width: 90%; }
       header div .main-nav ul {
         font-weight: bold;
-        background-color: #505D66;
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
