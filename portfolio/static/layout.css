@@ -62,11 +62,13 @@ main {
   padding-bottom: 85px; }
   main div {
     width: 90%;
-    margin: 10px 0px; }
+    margin: 10px 0px;
+    flex-direction: row;
+    padding-left: 1px; }
     main div .sidebar {
       background-color: #505D66;
-      width: 5%;
-      position: fixed; }
+      width: 4%;
+      height: 100%; }
       main div .sidebar .social {
         list-style: none;
         flex-direction: column;
@@ -94,7 +96,6 @@ main {
           color: #6FA8F2; }
     main div .content {
       padding-left: 20px;
-      padding-top: 10px;
       width: 90%;
       justify-content: space-around;
       flex-wrap: wrap; }
@@ -137,11 +138,13 @@ footer {
     font-size: 3em; } }
 @media only screen and (max-width: 500px) {
   header div .main-nav ul {
-    top: 33px; }
+    top: 32px; }
   header div h1 {
     font-size: 1.25em; }
 
-  .sidebar ul a li {
-    font-size: .5em; } }
+  main {
+    padding-top: 75px; }
+    main .sidebar ul a li {
+      font-size: .5em; } }
 
 /*# sourceMappingURL=layout.css.map */
