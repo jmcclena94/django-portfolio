@@ -88,7 +88,8 @@ main {
         main div .sidebar .social a {
           font-size: 2em;
           text-decoration: none;
-          color: #E3E5E4; }
+          color: #E3E5E4;
+          background-color: #505D66; }
         main div .sidebar .social a:hover {
           color: #6FA8F2; }
     main div .content {
@@ -135,14 +136,12 @@ footer {
     align-self: center;
     font-size: 3em; } }
 @media only screen and (max-width: 500px) {
-  header div {
-    border-bottom: none; }
-    header div .main-nav ul {
-      top: 50px; }
-    header div h1 {
-      display: none; }
+  header div .main-nav ul {
+    top: 33px; }
+  header div h1 {
+    font-size: 1.25em; }
 
-  .sidebar {
-    display: none; } }
+  .sidebar ul a li {
+    font-size: .5em; } }
 
 /*# sourceMappingURL=layout.css.map */
