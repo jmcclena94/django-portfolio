@@ -64,7 +64,8 @@ main {
     width: 90%;
     margin: 10px 0px; }
     main div .sidebar {
-      width: 10%;
+      background-color: #505D66;
+      width: 5%;
       position: fixed; }
       main div .sidebar .social {
         list-style: none;
@@ -88,8 +89,7 @@ main {
         main div .sidebar .social a {
           font-size: 2em;
           text-decoration: none;
-          color: #E3E5E4;
-          background-color: #505D66; }
+          color: #E3E5E4; }
         main div .sidebar .social a:hover {
           color: #6FA8F2; }
     main div .content {
