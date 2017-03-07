@@ -115,21 +115,23 @@ footer {
     text-align: center; }
 
 @media only screen and (max-width: 1110px) {
-  header div .main-nav {
-    position: absolute;
-    width: 90%; }
-    header div .main-nav ul {
-      font-weight: bold;
-      background-color: #505D66;
-      width: 100%;
-      flex-direction: row;
-      justify-content: space-around;
-      position: relative;
-      top: 98px; }
-  header div .seattle {
-    display: none; }
-  header div h1 {
-    text-align: left; } }
+  header {
+    padding-bottom: 20px; }
+    header div .main-nav {
+      position: absolute;
+      width: 90%; }
+      header div .main-nav ul {
+        font-weight: bold;
+        background-color: #505D66;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 98px; }
+    header div .seattle {
+      display: none; }
+    header div h1 {
+      text-align: left; } }
 @media only screen and (max-width: 670px) {
   header div .main-nav ul {
     top: 74px; }
