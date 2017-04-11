@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^$', HomepageView.as_view()),
     url(r'^', include('projects.urls')),
     url(r'^', include('blog.urls')),
+    url(r'^', include('subscribe.urls')),
 ]
 
 if settings.DEBUG:
