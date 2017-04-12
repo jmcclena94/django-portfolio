@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'portfolio',
     'projects',
     'blog',
+    'subscribe',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
