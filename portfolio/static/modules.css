@@ -79,7 +79,19 @@
           margin: auto; }
   .blog .bloglist {
     width: 20%;
-    text-align: left; }
+    text-align: center;
+    margin-top: 25px; }
+    .blog .bloglist .subscribe-button {
+      text-decoration: none;
+      background: #6FA8F2;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 1em;
+      color: inherit;
+      letter-spacing: 1px;
+      border-radius: 2px 2px 2px 2px;
+      cursor: pointer;
+      padding: 5px 10px 5px 10px; }
     .blog .bloglist ul {
       padding: 0;
       flex-direction: column;
