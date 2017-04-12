@@ -95,7 +95,8 @@
     .blog .bloglist ul {
       padding: 0;
       flex-direction: column;
-      list-style: none; }
+      list-style: none;
+      text-align: left; }
       .blog .bloglist ul li {
         margin-top: 20px; }
         .blog .bloglist ul li a {
