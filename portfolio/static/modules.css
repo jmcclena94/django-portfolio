@@ -194,6 +194,48 @@
     width: 100%;
     margin-right: 15px; }
 
+.subscribe_form {
+  width: 450px;
+  margin: 3% auto; }
+  .subscribe_form .subscribe_header {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center; }
+  .subscribe_form .subscribe_description {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: -2px 0 45px;
+    text-align: center; }
+  .subscribe_form .subscribe {
+    align-items: center;
+    margin-bottom: 2px; }
+    .subscribe_form .subscribe #id_email {
+      height: 44px;
+      width: 75%;
+      border: none;
+      background: #FDFCFB;
+      font-family: inherit;
+      color: #737373;
+      letter-spacing: 1px;
+      text-indent: 5%;
+      border-radius: 5px 0 0 5px; }
+    .subscribe_form .subscribe #submit_email {
+      height: 46px;
+      width: 35%;
+      border: none;
+      background: #6FA8F2;
+      font-family: inherit;
+      font-weight: bold;
+      color: inherit;
+      letter-spacing: 1px;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer; }
+  .subscribe_form .error {
+    font-size: .75em;
+    margin-top: 0px; }
+
 @media only screen and (max-width: 670px) {
   .landing img {
     width: 310px;
@@ -220,7 +262,10 @@
     font-size: .5em; }
 
   .bloglist {
-    font-size: .75em; } }
+    font-size: .75em; }
+
+  #submit_email {
+    font-size: .55em; } }
 @media only screen and (max-width: 500px) {
   .blog {
     margin-left: 0px; } }

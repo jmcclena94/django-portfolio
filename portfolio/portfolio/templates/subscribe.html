@@ -1,0 +1,17 @@
+{% extends "homepage.html" %}
+{% block content %}
+<form class="subscribe_form" action="" method="post">
+    {% csrf_token %}
+    <div class="subscribe_header">
+         <p>Sign Up For Updates</p>
+    </div>
+    <div class="subscribe_description">
+        <p>Thanks for reading!  Enter your email for updates whenever a new blog is posted.  You can unsubscribe at any time.</p>
+     </div>
+    <div class="flex subscribe">
+        {{ form.email }}
+        <input id="submit_email" type="submit" value="SUBSCRIBE" />
+    </div>
+    <p class="error">{{ form.email.errors.as_text }}</p>
+</form>
+{% endblock %}
