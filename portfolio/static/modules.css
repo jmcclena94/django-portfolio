@@ -92,6 +92,8 @@
       border-radius: 2px 2px 2px 2px;
       cursor: pointer;
       padding: 5px 10px 5px 10px; }
+    .blog .bloglist h4 {
+      text-align: left; }
     .blog .bloglist ul {
       padding: 0;
       flex-direction: column;
