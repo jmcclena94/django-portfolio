@@ -1,4 +1,11 @@
 {% extends "homepage.html" %}
+{% block title %}
+<meta property="og:title" content="Subscribe" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="joemcclenahan.com" />
+<meta property="og:url" content="http://www.joemcclenahan.com/subscribe" />
+<title>Joe McClenahan | Subscribe</title>
+{% endblock %}
 {% block content %}
 <form class="subscribe_form" action="" method="post">
     {% csrf_token %}
