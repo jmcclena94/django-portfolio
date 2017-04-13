@@ -1,4 +1,11 @@
 {% extends "homepage.html" %}
+{% block title %}
+<meta property="og:title" content="My Projects" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="joemcclenahan.com" />
+<meta property="og:url" content="http://www.joemcclenahan.com/projects" />
+<title>Joe McClenahan | Projects</title>
+{% endblock %}
 {% block content %}
 {% for project in object_list %}
 <div class="flex projects">

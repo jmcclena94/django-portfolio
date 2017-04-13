@@ -1,4 +1,11 @@
 {% extends "homepage.html" %}
+{% block title %}
+<meta property="og:title" content="{{ project.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="joemcclenahan.com" />
+<meta property="og:url" content="http://www.joemcclenahan.com/projects/{{ blog.id }}" />
+<title>{{ project.title }}</title>
+{% endblock %}
 {% block content %}
 <div class="flex project-detail">
     <div class="beta">
