@@ -4,7 +4,15 @@
 {% load staticfiles %}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta property="og:image" content="{% static 'fbook3.png' %}" />
+<meta property="og:image" content="{% static 'fbook_lrg.png' %}" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@joe_mcclenahan" />
+<meta name="twitter:creator" content="@joe_mcclenahan" />
+<meta name="twitter:image" content="{% static 'fbook_lrg.png' %}" />
+<meta name="twitter:image:alt" content="joemcclenahan.com" />
 {% block title %}
 {% endblock %}
 <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
@@ -14,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'modules.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'icomoon/style.css' %}" />
 <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon2.ico' %}" />
-<link rel="image_src" href="{% static 'fbook3.png' %}" />
+<link rel="image_src" href="{% static 'fbook_lrg.png' %}" />
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
